@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+	<bean id="address1" class="com.rohit.autowire.xml.Address">
+		<property name="city" value="Nagpur"></property>
+		<property name="state" value="Maharashtra"></property>
+	</bean>
+    <bean id="employee" class="com.rohit.autowire.xml.Employee" autowire="byName">
+		
+	</bean>
+
+</beans>
